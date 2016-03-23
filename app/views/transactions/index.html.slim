@@ -1,0 +1,20 @@
+- if !@transactions.empty?
+  div.page-header
+    p
+      h2= t(".transactions")
+
+  div
+    table.table
+      tr
+        th= t(".amount")
+        th= t(".comment")
+        th= t(".created_at")
+        th= t(".foreign_bankaccount_number")
+        th= t(".foreign_bankaccount_name")
+      - @transactions.each do |transaction|
+        tr
+          td= TransactionPresenter.new(transaction).amount
+          td= transaction.comment
+          td= TransactionPresenter.new(transaction).created_at
+          td= TransactionPresenter.new(transaction).foreign_bankaccount_number
+          td= TransactionPresenter.new(transaction).foreign_bankaccount_name

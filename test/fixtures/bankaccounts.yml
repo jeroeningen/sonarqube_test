@@ -1,0 +1,8 @@
+jeroen_bankaccount:
+  user: jeroen
+jan_bankaccount:
+  user: jan
+jeroen_transferring_money_bankaccount:
+  user: jeroen_transferring_money
+jeroen_with_transaction_bankaccount:
+  user: jeroen_with_transaction

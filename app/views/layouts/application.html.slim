@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title= t(".title")
+    meta name="keywords" content="template language"
+    meta name="author" content="author"
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  body
+    .container
+      // flash_mmessages
+      - if flash[:info].present?
+        .alert.alert-info= flash[:info]
+      - if flash[:notice].present?
+        .alert.alert-warning= flash[:notice]
+      - if flash[:error].present?
+        .alert.alert-danger= flash[:error]
+
+      h1= t(".welcome_to_ruby_bank")
+
+      - if current_user.present?
+        // navbar
+        nav.navbar
+          ul.navbar-nav.nav
+            li= link_to t(".home"), root_path, class: current_path == root_path ? "btn btn-default active" : "btn btn-default"
+            li= link_to t(".transactions"), transactions_path, class: current_path == transactions_path ? "btn btn-default active" : "btn btn-default"
+
+      - if current_user.present?
+        div.page-header
+          h1= t(".balance_info")
+
+        div.well
+          p.balance= UserPresenter.new(current_user).current_balance
+
+      = yield
+
+      - if current_user.present?
+        div
+          p= link_to t(".logout"), logout_path, class: "btn btn-primary"

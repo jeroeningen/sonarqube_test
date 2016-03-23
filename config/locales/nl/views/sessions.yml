@@ -1,0 +1,9 @@
+nl:
+ sessions:
+   new:
+      login: Login
+   create:
+      invalid_username_password: Combinatie emailadres en wachtwoord komen niet overeen.
+      succesful_logged_in: U bent succesvol ingelogd.
+   destroy:
+      succesful_logged_out: U bent succesvol uitgelogd.

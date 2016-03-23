@@ -1,0 +1,10 @@
+nl:
+  homepages:
+    index:
+      deposit_now: Nu storten
+      transfer_now: Nu overmaken
+      deposit_amount: Geld storten
+      transfer_money: Geld overmaken
+      amount: Bedrag
+      comment: Commentaar
+      bankaccount: Bankrekening

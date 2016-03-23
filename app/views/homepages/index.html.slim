@@ -1,0 +1,19 @@
+div.page-header
+  h1= t(".deposit_amount")
+
+.deposit-form
+  = simple_form_for @user do |f|
+    = f.input :deposit, input_html: {placeholder: "0.00", value: nil}, required: true
+    = f.submit t(".deposit_now"), class: "btn btn-primary"
+
+div.page-header
+  h1= t(".transfer_money")
+.transfer-form
+  = simple_form_for @user do |f|
+    = f.simple_fields_for :transfer_money do |f|
+      = f.input :bankaccount_id, collection: @bankaccounts, label: t(".bankaccount")
+      = f.input :amount, input_html: {placeholder: "0.00", value: nil}, label: t(".amount")
+      = f.input :comment, input_html: {value: nil}, label: t(".comment"), required: false
+      = f.submit t(".transfer_now"), class: "btn btn-primary"
+
+hr

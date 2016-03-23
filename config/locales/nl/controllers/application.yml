@@ -1,0 +1,4 @@
+nl:
+  controllers:
+    application:
+      not_logged_in: U moet ingelogd zijn.

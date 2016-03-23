@@ -1,0 +1,18 @@
+jeroen: &jeroen
+  firstname: "Jeroen"
+  lastname: "Van Ingen"
+  email: "jeroeningen@gmail.com"
+  password_digest: <%= BCrypt::Password.create("123456", cost: 4) %>
+jan:
+  firstname: "Jan"
+  lastname: "De Vries"
+  email: "jandevries@gmail.com"
+  password_digest: <%= BCrypt::Password.create("123456", cost: 4) %>
+jeroen_transferring_money:
+  <<: *jeroen
+  email: "jeroen_transferring_money@gmail.com"
+  password_digest: <%= BCrypt::Password.create("123456", cost: 4) %>
+jeroen_with_transaction:
+  <<: *jeroen
+  email: "jeroen_with_transaction@gmail.com"
+  password_digest: <%= BCrypt::Password.create("123456", cost: 4) %>

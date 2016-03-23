@@ -1,0 +1,8 @@
+jeroen_transferring_money_transaction:
+  amount: 200.0
+  comment: "U heeft EUR. 200.00 gestort"
+  bankaccount: jeroen_transferring_money_bankaccount
+jeroen_with_transaction_transaction:
+  amount: 200.0
+  comment: "U heeft EUR. 100.00 gestort"
+  bankaccount: jeroen_with_transaction_bankaccount

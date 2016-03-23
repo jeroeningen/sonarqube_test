@@ -1,0 +1,9 @@
+nl:
+  layouts:
+    application:
+      title: Case B - Ruby Bank
+      welcome_to_ruby_bank: Welkom bij de Ruby Bank
+      home: Home
+      transactions: Transacties
+      balance_info: Saldo informatie
+      logout: Uitloggen

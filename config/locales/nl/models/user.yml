@@ -1,0 +1,24 @@
+nl:
+  activerecord:
+    attributes:
+      user:
+        email: Email
+        password: Wachtwoord
+        deposit: Bedrag
+    messages:
+      models:
+        user:
+          not_enough_balance: U heeft onvoldoende saldo.
+          negative_deposit_not_allowed: U kunt geen negatief bedrag storten.
+          zero_deposit_not_allowed: U moet een bedrag opgeven.
+          negative_transfer_not_allowed: U kunt geen negatief bedrag overmaken.
+          zero_transfer_not_allowed: U moet een bedrag opgeven.
+          deposit: "Gestort: EUR. %{amount}"
+          deposit_added: "U heeft EUR. %{amount} gestort."
+          amount_transfered: "U heeft EUR. %{amount} overgemaakt naar bankrekening '%{bankaccount_id}' van %{firstname} %{lastname}."
+          no_bankaccount: "U moet een bankrekening opgeven."
+    errors:
+      models:
+        user:
+          attributes:
+            password_confirmation: Komt niet overeen met het wachtwoord

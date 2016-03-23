@@ -1,0 +1,7 @@
+nl:
+  activerecord:
+    errors:
+      models:
+        transaction:
+          attributes:
+            amount: De transactie kan niet gelijk zijn aan '0'.
