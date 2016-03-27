@@ -62,4 +62,5 @@ group :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'simplecov'
+  gem 'rubocop'
 end
