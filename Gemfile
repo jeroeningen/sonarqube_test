@@ -63,4 +63,5 @@ group :test do
   gem 'minitest-rails-capybara'
   gem 'simplecov'
   gem 'rubocop'
+  gem 'rubocop-checkstyle_formatter', require: false
 end
