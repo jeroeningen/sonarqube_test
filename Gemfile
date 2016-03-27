@@ -61,4 +61,5 @@ group :test do
   gem 'shoulda'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
+  gem 'simplecov'
 end

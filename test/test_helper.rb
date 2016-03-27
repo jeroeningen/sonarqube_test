@@ -5,6 +5,8 @@ require "minitest/spec"
 require "minitest/autorun"
 require "minitest/rails"
 require "minitest/rails/capybara"
+require 'simplecov'
+SimpleCov.start
 
 # context method not working out-of-the-box. See: https://github.com/rspec/rspec-core/issues/145
 
